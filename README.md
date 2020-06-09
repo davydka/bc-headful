@@ -1,10 +1,28 @@
 # Cornerstone
-[![Build Status](https://travis-ci.org/bigcommerce/cornerstone.svg?branch=master)](https://travis-ci.org/bigcommerce/cornerstone)
-
 Stencil's Cornerstone theme is the building block for BigCommerce theme developers to get started quickly developing premium quality themes on the BigCommerce platform.
 
 ### Stencil Utils
 [Stencil-utils](https://github.com/bigcommerce/stencil-utils) is our supporting library for our events and remote interactions.
+
+## Getting Started
+* Install `nvm`
+    * `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash`
+  	* `nvm install 10.16`
+* Check out repo and activate `Node 10.16`
+    * `git clone https://github.com/davydka/bc-headful.git`
+    * `cd bc-headful`
+    * `nvm use`
+* Install `Stencil utils`
+    * `npm install -g @bigcommerce/stencil-cli`
+* `npm install`
+* Generate a token at your store's dashboard:
+    * `https://<store-name>.mybigcommerce.com/manage/settings/auth/api-accounts`
+    * Click `Create API Account`
+        * `Create Stencil-CLI Token`
+* Use your token along with stencil-cli to generate `.stencil` file
+    * `stencil init --url https://<url> --token <token>`
+* Start Development
+    * `stencil start`
 
 ## JS API
 When writing theme JavaScript (JS) there is an API in place for running JS on a per page basis. To properly write JS for your theme, the following page types are available to you:
