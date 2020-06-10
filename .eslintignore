@@ -1,4 +1,5 @@
 /assets/js/bundle.js
 /assets/dist
+/grunt
 stencil.conf.js
 webpack.conf.js
